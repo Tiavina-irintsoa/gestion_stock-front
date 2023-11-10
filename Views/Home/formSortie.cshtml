@@ -1,0 +1,56 @@
+<div
+  class="box-root padding-top--24 flex-flex flex-direction--column"
+  style="flex-grow: 1; z-index: 9"
+>
+  <div
+    class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center"
+  >
+    <h1>
+      <a href="" rel="dofollow">Sortie</a>
+    </h1>
+  </div>
+    <div class="formbg">
+      <div class="formbg-inner padding-horizontal--48">
+        <span class="padding-bottom--15">Ajouter une sortie</span>
+        <span style="color:red;font-size:small;">
+            @ViewBag.message
+        </span>
+        <form method="post" action='@Url.Action("Submit","Mouvement")' id="stripe-login">
+          <div class="field padding-bottom--24">
+            <label for="email">Article</label>
+            <input type="text" name="article" />
+          </div>
+          <div class="field padding-bottom--24">
+            <label for="email">Date de la sortie</label>
+            <input type="date" name="date" />
+          </div>
+          <div class="field padding-bottom--24">
+            <div class="grid--50-50">
+              <label for="password">Quantité</label>
+            </div>
+            <input type="text" name="quantite" />
+          </div>
+          <div class="field padding-bottom--24">
+            <div class="grid--50-50">
+              <label for="password">Magasin</label>
+            </div>
+            <select name="magasin" id="">
+              @foreach(Magasin magasin in ViewBag.magasins){
+                <option value="@magasin.idMagasin">
+                  @magasin.nomMagasin
+                </option>
+              }
+            </select>
+          </div>
+          <div class="field padding-bottom--24">
+            <input type="submit"  value="Valider" />
+          </div>
+         
+        </form>
+      </div>
+    </div>
+    <div class="footer-link padding-top--24">
+      
+    </div>
+  </div>
+</div>

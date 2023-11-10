@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8NPbKAsNtVcD6z3WIAww58NskYEJf8uPfj6W4PgR4ER94yFyCHvc/vBm2ZRSQqcduGFjPjLZK7EbIQesRh2geg==",
+  "success": true,
+  "projectFilePath": "F:\\S5\\archilog\\gestion_stock\\front\\stock\\stock.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tita\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
